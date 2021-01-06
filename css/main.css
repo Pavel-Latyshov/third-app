@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    font-family: 'Rye', cursive;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main {
+    width: 870px;
+    height: 200px;
+    background-color: aquamarine;
+}
+
+.sidebar {
+    width: 270px;
+    height: 200px;
+    background-color: burlywood;
+}
+
+
+
+
+/* card */
+
+.card {
+    position: relative;
+    background-color: #fff;
+    width: 270px;
+}
+
+.card__badges {
+    position: absolute;
+    display: flex;
+    top: 10px;
+    left: 15px;
+    right: 15px;
+}
+
+.card__badges > * + * {
+    margin-left: 10px;
+}
+
+.card__badge {
+    display: inline-block;
+    height: 22px;
+    padding: 0 10px;
+    background: peru;
+    border-radius: 4px;
+    font-style: 14px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.card__badge--class {
+    background: peru;
+}
+
+.card__badge--credit {
+    background: teal;
+}
+
+/* cat */
+.cat {
+    height: 100%;
+    width: 100%;
+}
+/* / cat */
+
+.card__img {
+    
+}
+
+.card__title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-style: 18px;
+    line-height: 1.16;
+    color: black;
+
+}
+
+.card__content {
+
+    padding: 15px 15px 20px;
+    
+}
+
+.card__term {
+    margin-bottom: 10px;
+    font-style: 14px;
+    line-height: 1.14;
+    color: #000000;
+
+}
+
+.card__metro {
+    margin-bottom: 10px;
+    font-style: 14px;
+    line-height: 1.14;
+    color: #000000;
+}
+
+.card__metro::before {
+    content: "";
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: baseline;
+    width: 16px;
+    height: 11px;
+    background-image: url('./../img/metro.svg');
+    background-repeat: no-repeat;
+    background-size: initial;
+}
+
+.card__adress {
+    font-style: 14px;
+    line-height: 1.14;
+    color: #777777;
+}
